@@ -5,7 +5,6 @@
 
 trigger:
 - main
-
 pr:
   branches:
     include:

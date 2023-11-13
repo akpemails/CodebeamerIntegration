@@ -18,7 +18,7 @@ stages:
         displayName: "CodeBeamer upload"
         steps:
           - script: |
-              echo "Empty Job"
+              echo "Empty Job."
               - task: codeBeamer@1
                 inputs:
                   test_xml_folder: 'amittests'

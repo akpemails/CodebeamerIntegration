@@ -25,3 +25,14 @@ stages:
         steps:
           - script: |
               echo "Empty Job"
+- task: codeBeamer@1
+  inputs:
+    test_xml_folder: '.'
+    test_run_name: '$(Build.DefinitionName) $(Build.Reason)'
+    test_run_id: '$(Build.BuildId)'
+    server_url: 'https://mypdsreq.pdsvision.com:8080/cb/'
+    cb_user: '$(cb_user)'
+    cb_password: '$(cb_password)'
+    test_configuration_id: '66872'
+    test_case_tracker_id: '5819'
+    test_run_tracker_id: '66873'

@@ -24,7 +24,7 @@ stages:
               test_xml_folder: 'amittests'
               test_run_name: '$(Build.DefinitionName) $(Build.Reason)'
               test_run_id: '$(Build.BuildId)'
-              server_url: 'https://mypdsreq.pdsvision.com:8080/cb/'
+              server_url: 'https://mypdsreq.pdsvision.com:8080/cb'
               cb_user: '$(cb_user)'
               cb_password: '$(cb_password)'
               test_configuration_id: '66872'

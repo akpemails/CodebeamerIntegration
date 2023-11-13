@@ -1,1 +1,7 @@
-
+<?xml version="1.0" encoding="UTF-8"/>
+<testsuite name="CBIntegration" tests="2" skipped="0" failures="0" errors="0" 
+timestamp="2023-14-13T19:02:01" hostname="AmitPC" time="0.286">
+<properties/>
+<tescase name="cbIntegrationTest1" classname="CBIntegration" time="0.005"/>
+<tescase name="cbIntegrationTest1" classname="CBIntegration" time="0.005"/>
+<testsuite/>

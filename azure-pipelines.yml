@@ -6,14 +6,22 @@
 trigger:
 - main
 
+pr:
+  branches:
+    include:
+    - main
+
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+variables:
+- group: secrets
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+stages:
+  - stage: Test
+    jobs:
+      - job: Codebeamer
+        displayName: "CodeBeamer upload"
+        steps:
+          - script: |
+              echo "Empty Job"

@@ -21,7 +21,7 @@ stages:
               echo "Empty Job"
               - task: codeBeamer@1
                 inputs:
-                  test_xml_folder: '.'
+                  test_xml_folder: 'amittests'
                   test_run_name: '$(Build.DefinitionName) $(Build.Reason)'
                   test_run_id: '$(Build.BuildId)'
                   server_url: 'https://mypdsreq.pdsvision.com:8080/cb/'
